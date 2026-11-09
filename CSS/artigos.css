@@ -1,0 +1,266 @@
+/* Reset básico e tipografia clássica */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: #fdfdfd;
+    color: #121212;
+    line-height: 1.6;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    color: #121212;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Cabeçalho estilo jornal impresso */
+header {
+    text-align: center;
+    border-bottom: 3px double #121212;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.info-edicao {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    color: #555;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* Grade da Página Inicial (Home) */
+.grade-noticias {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.manchete-principal {
+    border-right: 1px solid #e2e2e2;
+    padding-right: 30px;
+}
+
+.manchete-principal img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.manchete-principal h2 {
+    font-size: 2.2rem;
+    line-height: 1.15;
+    margin-bottom: 10px;
+}
+
+.coluna-lateral article {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.coluna-lateral article:last-child {
+    border-bottom: none;
+}
+
+.coluna-lateral h3 {
+    font-size: 1.3rem;
+    line-height: 1.25;
+    margin-bottom: 8px;
+}
+
+/* Grade Secundária (3 colunas) */
+.grade-secundaria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.grade-secundaria article {
+    border-right: 1px solid #e2e2e2;
+    padding-right: 20px;
+}
+
+.grade-secundaria article:last-child {
+    border-right: none;
+}
+
+.categoria {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.resumo {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.autor-data {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    color: #777;
+}
+
+/* Estilos Específicos da Página de Artigo */
+.artigo-container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.artigo-header {
+    text-align: left;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 20px;
+}
+
+.artigo-header h2 {
+    font-size: 2.5rem;
+    line-height: 1.15;
+    margin: 10px 0;
+}
+
+.subtitulo {
+    font-size: 1.25rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.artigo-corpo p {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.artigo-corpo figure {
+    margin: 25px 0;
+}
+
+.artigo-corpo img {
+    width: 100%;
+    height: auto;
+}
+
+.artigo-corpo figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+blockquote {
+    border-left: 3px solid #121212;
+    padding-left: 20px;
+    margin: 25px 0;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #333;
+}
+
+/* Seção de Comentários */
+.comentarios {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #121212;
+}
+
+.comentario-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+form {
+    margin-top: 20px;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+button {
+    background-color: #121212;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 3px double #121212;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Responsividade básica para celulares */
+@media (max-width: 768px) {
+    .grade-noticias, .grade-secundaria {
+        grid-template-columns: 1fr;
+    }
+    .manchete-principal, .grade-secundaria article {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 20px;
+    }
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
