@@ -3,33 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Leitor - O Clarim Diário</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Cadastro - O Clarim Diário</title>
+    <link rel="stylesheet" href="../CSS/cadastro.css">
 </head>
 <body>
 
     <header>
         <h1><a href="index.html">O Clarim Diário</a></h1>
         <div class="info-edicao">
-            <span>Segunda-feira, 9 de Novembro de 2026</span>
+            <span>Quarta-feira, 11 de Novembro de 2026</span>
             <span><a href="index.html">&larr; Voltar para a Capa</a></span>
-            <span>Área do Assinante</span>
+            <span><a href="login.html">Já tenho conta (Entrar)</a></span>
         </div>
     </header>
 
     <main class="artigo-container">
         <div class="artigo-header">
-            <span class="categoria">Assinatura e Acesso</span>
+            <span class="categoria">Assinatura e Credenciamento</span>
             <h2>Crie sua conta no Clarim Diário</h2>
-            <p class="subtitulo">Cadastre-se gratuitamente para comentar nas reportagens e receber nosso boletim matinal por e-mail.</p>
+            <p class="subtitulo">Escolha seu perfil de acesso para comentar nas reportagens ou publicar matérias na redação.</p>
         </div>
 
         <form action="#" method="POST">
-            <label for="nome-completo">Nome Completo:</label>
+            <p><strong>Selecione seu perfil de acesso:</strong></p>
+            <p style="margin: 10px 0 20px 0; padding: 12px; background: #fff; border: 1px solid #ccc;">
+                <input type="radio" id="perfil-leitor" name="tipo_usuario" value="leitor" checked style="width: auto;">
+                <label for="perfil-leitor"><strong>Leitor / Assinante</strong> — Para ler, comentar e receber boletins.</label><br><br>
+
+                <input type="radio" id="perfil-jornalista" name="tipo_usuario" value="jornalista" style="width: auto;">
+                <label for="perfil-jornalista"><strong>Jornalista / Colunista</strong> — Para redigir e publicar reportagens.</label>
+            </p>
+
+            <label for="nome-completo">Nome Completo (ou nome de assinatura):</label>
             <input type="text" id="nome-completo" name="nome-completo" required>
 
-            <label for="email">E-mail:</label>
+            <label for="email">E-mail (pessoal ou corporativo):</label>
             <input type="email" id="email" name="email" required>
+
+            <label for="registro-mtb">Registro Profissional / MTB (Obrigatório apenas para Jornalistas):</label>
+            <input type="text" id="registro-mtb" name="registro-mtb" placeholder="Ex: 00000/UF">
 
             <label for="senha">Senha:</label>
             <input type="password" id="senha" name="senha" required>
@@ -37,8 +49,8 @@
             <label for="confirmar-senha">Confirmar Senha:</label>
             <input type="password" id="confirmar-senha" name="confirmar-senha" required>
 
-            <p><strong>Editorias de interesse:</strong></p>
-            <p>
+            <p><strong>Editorias de interesse ou atuação:</strong></p>
+            <p style="margin: 8px 0 15px 0;">
                 <input type="checkbox" id="int-politica" name="interesses" value="politica" style="width: auto;">
                 <label for="int-politica">Política</label><br>
 
@@ -46,21 +58,31 @@
                 <label for="int-economia">Economia</label><br>
 
                 <input type="checkbox" id="int-tecnologia" name="interesses" value="tecnologia" style="width: auto;">
-                <label for="int-tecnologia">Tecnologia</label>
+                <label for="int-tecnologia">Tecnologia</label><br>
+
+                <input type="checkbox" id="int-cultura" name="interesses" value="cultura" style="width: auto;">
+                <label for="int-cultura">Cultura</label><br>
+
+                <input type="checkbox" id="int-esportes" name="interesses" value="esportes" style="width: auto;">
+                <label for="int-esportes">Esportes</label>
             </p>
 
-            <p>
+            <p style="margin-bottom: 15px;">
                 <input type="checkbox" id="termos" name="termos" required style="width: auto;">
                 <label for="termos">Li e concordo com os <a href="termos.html"><u>Termos de Uso</u></a> e a <a href="privacidade.html"><u>Política de Privacidade</u></a>.</label>
             </p>
 
             <button type="submit">Concluir Cadastro</button>
+
+            <p style="margin-top: 20px; font-size: 0.9rem; border-top: 1px solid #ccc; padding-top: 15px;">
+                Já é jornalista credenciado? <a href="criar-noticia.html"><strong>Acessar Painel de Criação de Notícias &rarr;</strong></a>
+            </p>
         </form>
     </main>
 
     <footer>
         <p>&copy; 2026 O Clarim Diário - Todos os direitos reservados.</p>
-        <p><a href="privacidade.html">Política de Privacidade</a> | <a href="termos.html">Termos de Uso</a> | <a href="redacao.html">Redação</a></p>
+        <p><a href="privacidade.html">Política de Privacidade</a> | <a href="termos.html">Termos de Uso</a> | <a href="redacao.html">Redação e Expediente</a></p>
     </footer>
 
 </body>
