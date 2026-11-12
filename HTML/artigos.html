@@ -11,19 +11,29 @@
     <header>
         <h1><a href="index.html">O Clarim Diário</a></h1>
         <div class="info-edicao">
-            <span>Segunda-feira, 9 de Novembro de 2026</span>
+            <span>Terça-feira, 10 de Novembro de 2026</span>
             <span><a href="index.html">&larr; Voltar para a Capa</a></span>
-            <span>Tecnologia</span>
+            <span><a href="login.html">Entrar</a> | <a href="cadastro.html"><strong>Cadastre-se</strong></a></span>
         </div>
+        <nav>
+            <ul>
+                <li><a href="../HTML/index.html">Início</a></li>
+                <li><a href="../HTML/politica.html">Política</a></li>
+                <li><a href="../HTML/economia.html">Economia</a></li>
+                <li><a href="../HTML/tecnologia.html">Tecnologia</a></li>
+                <li><a href="../HTML/cultura.html">Cultura</a></li>
+                <li><a href="../HTML/esportes.html">Esportes</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="artigo-container">
         <article>
             <div class="artigo-header">
-                <span class="categoria">Tecnologia</span>
+                <a href="../HTML/tecnologia.html" class="categoria">Tecnologia</a>
                 <h2>Avanço da Inteligência Artificial transforma o mercado de trabalho em 2026</h2>
                 <p class="subtitulo">Novas ferramentas automatizam tarefas rotineiras e criam demanda por profissionais especializados em supervisão de sistemas.</p>
-                <p class="autor-data">Por <strong>Mariana Silva</strong>, da redação • Atualizado em <time datetime="2026-11-09T08:00">09/11/2026 às 08:00</time></p>
+                <p class="autor-data">Por <strong>Mariana Silva</strong>, da redação • Atualizado em <time datetime="2026-11-10T08:00">10/11/2026 às 08:00</time></p>
             </div>
 
             <div class="artigo-corpo">
@@ -37,12 +47,27 @@
 
                 <h3>O impacto nos setores de serviço</h3>
                 <p>Mollis nunc sed id semper risus in hendrerit gravida rutrum. Morbi tincidunt augue interdum velit euismod in pellentesque. Varius duis at consectetur lorem donec massa sapien faucibus et.</p>
+
+                <p>Para acompanhar mais reportagens sobre inovação e mercado digital, acesse a editoria completa de <a href="tecnologia.html"><u>Tecnologia</u></a> ou veja os reflexos financeiros na seção de <a href="economia.html"><u>Economia</u></a>.</p>
             </div>
         </article>
 
+        <!-- Bloco de Navegação Rápida / Leia Também -->
+        <section style="border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 15px 0; margin: 30px 0;">
+            <p class="categoria">Continue Lendo no Clarim Diário</p>
+            <p style="font-size: 0.95rem; margin-top: 8px;">
+                &bull; <a href="politica.html"><strong>Política:</strong> Comissão aprova novo marco regulatório para energias renováveis</a><br>
+                &bull; <a href="cultura.html"><strong>Cultura:</strong> Mostra internacional de cinema anuncia filmes selecionados</a><br>
+                &bull; <a href="redacao.html"><strong>Errata ou sugestão?</strong> Entre em contato com nossa equipe editorial</a>
+            </p>
+        </section>
+
         <!-- Seção de Comentários -->
-        <section class="comentarios">
+        <section id="comentarios" class="comentarios">
             <h3>Comentários dos Leitores (2)</h3>
+            <p style="font-size: 0.85rem; color: #555; margin-bottom: 15px;">
+                Já possui conta? <a href="login.html"><u>Faça login</u></a> ou <a href="cadastro.html"><u>cadastre-se</u></a> para participar. Ao comentar, você concorda com nossos <a href="termos.html"><u>Termos de Uso</u></a>.
+            </p>
             
             <div class="comentario-item">
                 <h4>Carlos Eduardo</h4>
@@ -56,7 +81,7 @@
                 <p>Acredito que o foco das universidades deveria mudar para preparar os estudantes para essa nova realidade o quanto antes.</p>
             </div>
 
-            <form>
+            <form action="#" method="POST">
                 <h4>Deixe sua opinião</h4>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
@@ -71,8 +96,8 @@
 
     <footer>
         <p>&copy; 2026 O Clarim Diário - Todos os direitos reservados.</p>
+        <p><a href="privacidade.html">Política de Privacidade</a> | <a href="termos.html">Termos de Uso</a> | <a href="redacao.html">Redação e Expediente</a></p>
     </footer>
 
 </body>
 </html>
-
