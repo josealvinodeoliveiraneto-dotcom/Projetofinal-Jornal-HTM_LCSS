@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Redação - Criar Notícia - O Clarim Diário</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html">O Clarim Diário</a></h1>
+        <div class="info-edicao">
+            <span>Quarta-feira, 11 de Novembro de 2026</span>
+            <span>Sistema Editorial • Área do Jornalista</span>
+            <span><a href="index.html">Ver Capa do Jornal</a> | <a href="login.html">Sair</a></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="politica.html">Política</a></li>
+                <li><a href="economia.html">Economia</a></li>
+                <li><a href="tecnologia.html">Tecnologia</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+                <li><a href="esportes.html">Esportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="artigo-container">
+        <div class="artigo-header">
+            <span class="categoria">Redação Digital</span>
+            <h2>Publicar Nova Reportagem</h2>
+            <p class="subtitulo">Preencha os campos abaixo para redigir e enviar uma nova matéria para publicação no portal.</p>
+        </div>
+
+        <form action="#" method="POST">
+            <label for="editoria">Editoria / Seção:</label>
+            <select id="editoria" name="editoria" required style="width: 100%; padding: 8px; margin: 5px 0 15px 0; border: 1px solid #ccc; font-family: inherit; background: #fff;">
+                <option value="">Selecione uma editoria...</option>
+                <option value="politica">Política</option>
+                <option value="economia">Economia</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="cultura">Cultura</option>
+                <option value="esportes">Esportes</option>
+            </select>
+
+            <label for="manchete">Título da Reportagem (Manchete):</label>
+            <input type="text" id="manchete" name="manchete" placeholder="Digite o título principal da notícia" required>
+
+            <label for="subtitulo">Linha Fina (Subtítulo / Resumo):</label>
+            <textarea id="subtitulo" name="subtitulo" rows="2" placeholder="Breve resumo que aparece abaixo do título e na capa do jornal" required></textarea>
+
+            <label for="autor">Assinatura do Jornalista:</label>
+            <input type="text" id="autor" name="autor" placeholder="Ex: Mariana Silva, da redação" required>
+
+            <label for="destaque">Posição na Capa:</label>
+            <p style="margin: 5px 0 15px 0;">
+                <input type="radio" id="pos-normal" name="posicao" value="normal" checked style="width: auto;">
+                <label for="pos-normal">Notícia Padrão da Editoria</label><br>
+
+                <input type="radio" id="pos-lateral" name="posicao" value="lateral" style="width: auto;">
+                <label for="pos-lateral">Destaque na Coluna Lateral da Capa</label><br>
+
+                <input type="radio" id="pos-manchete" name="posicao" value="manchete" style="width: auto;">
+                <label for="pos-manchete">Manchete Principal do Dia</label>
+            </p>
+
+            <label for="citacao">Citação de Destaque (Opcional):</label>
+            <input type="text" id="citacao" name="citacao" placeholder="Frase relevante de um entrevistado para destacar no texto">
+
+            <label for="conteudo">Corpo da Matéria:</label>
+            <textarea id="conteudo" name="conteudo" rows="12" placeholder="Escreva o texto completo da reportagem aqui. Separe os parágrafos com uma linha em branco." required></textarea>
+
+            <p style="margin-bottom: 15px;">
+                <input type="checkbox" id="revisao" name="revisao" required style="width: auto;">
+                <label for="revisao">Confirmo que as informações foram apuradas de acordo com as diretrizes editoriais do Clarim Diário.</label>
+            </p>
+
+            <button type="submit">Publicar Reportagem</button>
+            <a href="artigo.html" style="margin-left: 15px; font-family: Arial, sans-serif; font-size: 0.85rem;"><u>Visualizar modelo de artigo</u></a>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 O Clarim Diário - Todos os direitos reservados.</p>
+        <p><a href="privacidade.html">Política de Privacidade</a> | <a href="termos.html">Termos de Uso</a> | <a href="redacao.html">Redação e Expediente</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar - O Clarim Diário</title>
+    <link rel="stylesheet" href="../CSS/cadastro.css">
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html">O Clarim Diário</a></h1>
+        <div class="info-edicao">
+            <span>Quinta-feira, 12 de Novembro de 2026</span>
+            <span><a href="index.html">&larr; Voltar para a Capa</a></span>
+            <span>Acesso do Leitor</span>
+        </div>
+    </header>
+
+    <main class="artigo-container">
+        <div class="artigo-header">
+            <span class="categoria">Área do Assinante e Redação</span>
+            <h2>Acesse sua conta</h2>
+            <p class="subtitulo">Entre com seu e-mail e senha para comentar nas reportagens ou acessar o sistema editorial.</p>
+        </div>
+
+        <form action="#" method="POST">
+            <label for="login-email">E-mail cadastrado:</label>
+            <input type="email" id="login-email" name="email" required>
+
+            <label for="login-senha">Senha:</label>
+            <input type="password" id="login-senha" name="senha" required>
+
+            <p>
+                <input type="checkbox" id="lembrar" name="lembrar" style="width: auto;">
+                <label for="lembrar">Manter conectado neste dispositivo</label>
+            </p>
+
+            <button type="submit">Entrar</button>
+
+            <p style="margin-top: 20px; font-size: 0.9rem;">
+                Ainda não possui uma conta? <a href="cadastro.html"><strong>Cadastre-se gratuitamente</strong></a>.<br>
+                <a href="redacao.html"><u>Esqueci minha senha</u></a>
+            </p>
+
+            <p style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ccc; font-size: 0.9rem;">
+                <strong>Equipe Editorial:</strong> <a href="../HTML/criar_artigo.html"><u>Acesso à Redação (Jornalistas) &rarr;</u></a>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 O Clarim Diário - Todos os direitos reservados.</p>
+        <p><a href="privacidade.html">Política de Privacidade</a> | <a href="termos.html">Termos de Uso</a> | <a href="redacao.html">Redação e Expediente</a></p>
+    </footer>
+
+</body>
+</html>
