@@ -165,7 +165,7 @@ nav ul {
 
 .subtitulo {
     font-size: 1.25rem;
-    color: #555;
+    color: #706f6f;
     font-style: italic;
     margin-bottom: 15px;
 }
@@ -188,7 +188,7 @@ nav ul {
 .artigo-corpo figcaption {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
-    color: #666;
+    color: #7a7979;
     margin-top: 5px;
 }
 
@@ -223,7 +223,7 @@ input, textarea {
     width: 100%;
     padding: 8px;
     margin: 5px 0 15px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #b6b4b4;
     font-family: inherit;
 }
 
